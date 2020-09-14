@@ -11,13 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      # Build app
-      - name: Install node moduiles and Build static
-        run: |
-          npm i
-          npm run build
       # Deploy by FTP
-      - name: Deploy builded public_html
+      - name: Deploy builded docs
         uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
         with:
           ftp_host: ${{ secrets.FTP_HOST }}
