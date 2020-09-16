@@ -1,4 +1,6 @@
-DirectoryIndex index.php index.html
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .htm .html .phtml
+
 Options -Indexes
 
 DefaultLanguage ru
@@ -14,8 +16,4 @@ ErrorDocument 404 /index.html
   AddOutputFilterByType DEFLATE application/rss+xml
   AddOutputFilterByType DEFLATE application/javascript
   AddOutputFilterByType DEFLATE application/x-javascript
-</IfModule>
-
-<IfModule mod_mime.c>
-  AddType application/x-httpd-php .php .htm .html
 </IfModule>

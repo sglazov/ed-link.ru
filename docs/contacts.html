@@ -1,281 +1,125 @@
-<!DOCTYPE html>
-<!--[if IE 8 ]><html lang="en" dir="ltr"  class="no-js ie8"><![endif]-->
-<!--[if IE 9 ]><html lang="en" dir="ltr"  class="no-js ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" dir="ltr" class="no-js"><!--<![endif]-->
-<head>
+<?php require_once( $_SERVER['DOCUMENT_ROOT'] . "/php/main.php" ); ?>
+<?php
+$meta = [
+    "title"       => "ED-LINK | Лучшие идеи для бизнеса!",
+    "description" => "",
+    "keywords"    => ""
+]; ?>
+<?php require( __DIR__ . "/includes/head.php" ); ?>
 
 
-
-
-
-
-
-
-<meta charset="WIN-1251"/>
-
-
-<link rel="shortcut icon" href="sites/all/themes/theme752/favicon.ico" type="image/vnd.microsoft.icon"/>
-<meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
-<!--[if lte IE 7]> <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></div> <![endif]-->
-<title>ED-LINK | Лучшие идеи для бизнеса!</title>
-<!--[if LT IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-<!--[if lte IE 8]>
-	<style type="text/css">
-    	.poll .bar, .poll .bar .foreground { behavior:url(/sites/all/themes/theme752/js/PIE.php); zoom:1}
-	</style>
-	
-<![endif]-->
-
-<style type="text/css">
-    .new_link  {
-    background: none repeat scroll 0 0 #2B2B2B;
-    border-radius: 5px 5px 5px 5px;
-    display: inline-block;
-	color: #FFFFFF;
-    padding: 5px 10px;
-    text-decoration: none;
-}
-</style>
-<style type="text/css" media="all">@import url("modules/system/system.base.css");@import url("modules/system/system.menus.css");@import url("modules/system/system.messages.css");@import url("modules/system/system.theme.css");</style>
-<style type="text/css" media="all">@import url("sites/all/modules/scroll_to_top/scroll_to_top.css");@import url("modules/aggregator/aggregator.css");@import url("modules/book/book.css");@import url("modules/comment/comment.css");@import url("modules/field/theme/field.css");</style>
-<style type="text/css" media="screen">@import url("sites/all/modules/flexslider/assets/css/flexslider_img.css");</style>
-<style type="text/css" media="all">@import url("modules/node/node.css");@import url("modules/poll/poll.css");@import url("modules/search/search.css");@import url("modules/user/user.css");@import url("modules/forum/forum.css");@import url("sites/all/modules/views/css/views.css");</style>
-<style type="text/css" media="all">@import url("sites/all/modules/colorbox/styles/default/colorbox_style.css");@import url("sites/all/modules/ctools/css/ctools.css");@import url("sites/all/modules/follow/follow.css");@import url("sites/all/modules/panels/css/panels.css");</style>
-<style type="text/css" media="all"><!--/*--><![CDATA[/*]]><!--*/
-#back-top{right:40px;}#back-top span#button{background-color:#CCCCCC;}#back-top span#button:hover{opacity:1;filter:alpha(opacity = 1);background-color:#777777;}
-
-/*]]>*/-->
-</style>
-<style type="text/css" media="all">@import url("sites/all/libraries/superfish/css/superfish.css");
-@import url("sites/all/libraries/superfish/css/superfish-vertical.css");
-@import url("sites/all/libraries/superfish/css/superfish-navbar.css");
-@import url("sites/all/modules/views_slideshow/views_slideshow.css");
-@import url("sites/all/modules/panels/plugins/layouts/flexible/flexible.css");
-@import url("sites/all/modules/getlocations/modules/getlocations_fields/getlocations_fields.css");
-@import url("sites/all/modules/getlocations/getlocations.css");
-@import url("sites/default/files/ctools/css/15cc8ccb9dac3ada75f377bde14d47dd.css");</style>
-<style type="text/css" media="screen">@import url("sites/all/themes/theme752/css/boilerplate.css");
-@import url("sites/all/themes/theme752/css/style.css");
-@import url("sites/all/themes/theme752/css/maintenance-page.css");</style>
-  <script type="text/javascript" src="misc/jquery.js"></script>
-<script type="text/javascript" src="misc/jquery.once.js"></script>
-<script type="text/javascript" src="misc/drupal.js"></script>
-<script type="text/javascript" src="sites/all/modules/addthis/addthis.js"></script>
-<script type="text/javascript" src="sites/all/libraries/colorbox/colorbox/jquery.colorbox-min.js"></script>
-<script type="text/javascript" src="sites/all/modules/colorbox/js/colorbox.js"></script>
-<script type="text/javascript" src="sites/all/modules/colorbox/styles/default/colorbox_style.js"></script>
-<script type="text/javascript" src="sites/all/modules/getlocations/js/getlocations_colorbox.js"></script>
-<script type="text/javascript" src="sites/all/modules/panels/js/panels.js"></script>
-<script type="text/javascript" src="sites/all/modules/scroll_to_top/scroll_to_top.js"></script>
-<script type="text/javascript" src="sites/all/libraries/superfish/jquery.hoverIntent.minified.js"></script>
-<script type="text/javascript" src="sites/all/libraries/superfish/jquery.bgiframe.min.js"></script>
-<script type="text/javascript" src="sites/all/libraries/superfish/superfish.js"></script>
-<script type="text/javascript" src="sites/all/libraries/superfish/supersubs.js"></script>
-<script type="text/javascript" src="sites/all/libraries/superfish/supposition.js"></script>
-<script type="text/javascript" src="sites/all/libraries/superfish/sftouchscreen.js"></script>
-<script type="text/javascript" src="sites/all/modules/views_slideshow/js/views_slideshow.js"></script>
-<script type="text/javascript" src="sites/all/modules/getlocations/js/icons.js"></script>
-<script type="text/javascript" src="sites/default/files/getlocations/getlocations_markers.js"></script>
-<script type="text/javascript" src="sites/all/modules/getlocations/js/infobubble.js"></script>
-<script type="text/javascript" src="sites/all/modules/getlocations/js/getlocations.js"></script>
-<script type="text/javascript" src="sites/all/themes/theme752/js/theme752.core.js"></script>
-<script type="text/javascript" src="sites/all/themes/theme752/js/jquery.loader.js"></script>
-
-
-</head>
-<body id="body" class="html not-front not-logged-in no-sidebars page-contacts with-navigation with-subnav section-contacts">
-
-
-
-
-
-    
-<div id="page-wrapper">
-
-  <div id="page">
-
-    <header id="header" role="banner" class="clearfix">
-        <div class="glow">
-            <div class="header-wrapper">
-                <div class="section-1 clearfix">
-                  <div class="inner">
-                  	<div class="col1">
-                      	                              <a href="index.html" title="Home" rel="home" id="logo">
-                                  <img src="sites/all/themes/theme752/logo.png" alt="Home"/>
-                              </a>
-                                                
-                                                        <div id="name-and-slogan">
-                                                              
-                                                                  <div id="site-slogan">&nbsp; Лучшие идеи для бизнеса!</div>
-                                                              </div><!-- /#name-and-slogan -->
-                                                </div>
-                                                <div class="col2">
-                                <div class="region region-menu">
-    <div id="block-superfish-1" class="block block-superfish block-odd">
-
-      
- <div class="content">
-    <ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-6 sf-parent-items-1 sf-single-items-5"><li id="menu-201-1" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="index.html" class="sf-depth-1  active">Главная</a></li><li id="menu-1942-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="about.html" title="" class="sf-depth-1 ">О компании</a></li><li id="menu-1943-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="services.html" title="" class="sf-depth-1 ">Услуги</a></li><li id="menu-442-1" class="last even sf-item-6 sf-depth-1 sf-no-children"><a href="contacts.html" title="" class="sf-depth-1 ">Контакты</a></li></ul>  </div><!-- /.content -->
-
-</div><!-- /.block -->  </div>
-                          </div>
-                                          </div>
-                </div>
-                
-
-        		            </div>
-        </div>
-    </header><!-- /#header -->
- 
-
-  <div id="main-wrapper">
+<div id="main-wrapper">
     <div id="main" class="clearfix">
-    
-        
-              
-      <div id="content" class="column" role="main">
-        <div class="section">
-        
-                
-                
-                
-                
-                
-                  <div class="tabs"></div>
-                
-                
-                
-                  <div class="region region-content">
-    <div id="block-system-main" class="block block-system block-even">
-
-      
-  <div class="content">
-    <div class="panel-flexible panels-flexible-1 clearfix" id="contacts">
-<div class="panel-flexible-inside panels-flexible-1-inside">
-<div class="panels-flexible-row panels-flexible-row-1-main-row panels-flexible-row-first clearfix">
-  <div class="inside panels-flexible-row-inside panels-flexible-row-1-main-row-inside panels-flexible-row-inside-first clearfix">
-<div class="panels-flexible-region panels-flexible-region-1-center panels-flexible-region-first panels-flexible-region-last">
-  <div class="inside panels-flexible-region-inside panels-flexible-region-1-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
-<div class="panel-pane pane-node">
-  
-        <h2 class="pane-title">Как нас найти:</h2>
-    
-  
-  
-  
- <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LL1LZfamxvw_2w_xgHnxrqnUXpgFg9Aw&amp;width=900&amp;height=450"></script>
-  
-  
-</article><!-- /.node -->
-  </div>
-
-  
-  </div>
-  </div>
+        <div id="content" class="column" role="main">
+            <div class="section">
+                <div class="tabs"></div>
+                <div class="region region-content">
+                    <div id="block-system-main" class="block block-system block-even">
+                        <div class="content">
+                            <div class="panel-flexible panels-flexible-1 clearfix" id="contacts">
+                                <div class="panel-flexible-inside panels-flexible-1-inside">
+                                    <div class="panels-flexible-row panels-flexible-row-1-main-row panels-flexible-row-first clearfix">
+                                        <div class="inside panels-flexible-row-inside panels-flexible-row-1-main-row-inside panels-flexible-row-inside-first clearfix">
+                                            <div class="panels-flexible-region panels-flexible-region-1-center panels-flexible-region-first panels-flexible-region-last">
+                                                <div class="inside panels-flexible-region-inside panels-flexible-region-1-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+                                                    <div class="panel-pane pane-node">
+                                                        <h2 class="pane-title">Как нас найти:</h2>
+                                                        <script type="text/javascript" charset="utf-8"
+                                                                src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LL1LZfamxvw_2w_xgHnxrqnUXpgFg9Aw&amp;width=900&amp;height=450"></script>
+                                                        </article><!-- /.node -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panels-flexible-row panels-flexible-row-1-1 panels-flexible-row-last clearfix ">
+                                    <div class="inside panels-flexible-row-inside panels-flexible-row-1-1-inside panels-flexible-row-inside-last clearfix">
+                                        <div class="panels-flexible-region panels-flexible-region-1-contacts_region panels-flexible-region-first panels-flexible-region-last contacts-region">
+                                            <div class="inside panels-flexible-region-inside panels-flexible-region-1-contacts_region-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+                                                <div class="panel-pane pane-contact">
+                                                    <h2 class="pane-title">Отправить сообщение</h2>
+                                                    <div class="pane-content">
+                                                        <form class="user-info-from-cookie contact-form"
+                                                              action="http://ed-link.ru/contacts.html"
+                                                              method="post" id="contact-site-form"
+                                                              accept-charset="WIN-1251">
+                                                            <div>
+                                                                <div class="form-item form-type-textfield form-item-name">
+                                                                    <label for="edit-name">Ваше имя <span
+                                                                                class="form-required"
+                                                                                title="This field is required.">*</span></label>
+                                                                    <input type="text" id="edit-name"
+                                                                           name="name" value="" size="60"
+                                                                           maxlength="255"
+                                                                           class="form-text required"/>
+                                                                </div>
+                                                                <div class="form-item form-type-textfield form-item-mail">
+                                                                    <label for="edit-mail">Ваш e-mail адрес
+                                                                        <span class="form-required"
+                                                                              title="This field is required.">*</span></label>
+                                                                    <input type="text" id="edit-mail"
+                                                                           name="mail" value="" size="60"
+                                                                           maxlength="255"
+                                                                           class="form-text required"/>
+                                                                </div>
+                                                                <div class="form-item form-type-textfield form-item-subject">
+                                                                    <label for="edit-subject">Тема сообщения
+                                                                        <span class="form-required"
+                                                                              title="This field is required.">*</span></label>
+                                                                    <input type="text" id="edit-subject"
+                                                                           name="subject" value="" size="60"
+                                                                           maxlength="255"
+                                                                           class="form-text required"/>
+                                                                </div>
+                                                                <div class="form-item form-type-textarea form-item-message">
+                                                                    <label for="edit-message">Текст сообщения
+                                                                        <span class="form-required"
+                                                                              title="This field is required.">*</span></label>
+                                                                    <div class="form-textarea-wrapper resizable">
+                                                                        <textarea id="edit-message"
+                                                                                  name="message" cols="60"
+                                                                                  rows="5"
+                                                                                  class="form-textarea required"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <br/>
+                                                                <a href="#" class="new_link">Отправить
+                                                                    заявку</a>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-separator"></div>
+                                                <div class="panel-pane pane-custom pane-1 contact-information">
+                                                    <h2 class="pane-title">Контактная информация</h2>
+                                                    <div class="pane-content">
+                                                        <p>Общество с ограниченной ответственностью
+                                                            «Эдлинк».<br/>
+                                                            125364, г. Москва, ул. Свободы, д. 50, пом. 15,<br/>
+                                                            ИНН 7716683752 /КПП 773301001
+                                                        </p>
+                                                        <p>Телефон:+7 (495) 788-02-96 </p>
+                                                        E-mail: info@ed-link.ru
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.content -->
+                </div>
+                <!-- /.block -->
+            </div>
+        </div>
+        <!-- /.section -->
+    </div>
+    <!-- /#content -->
 </div>
-  </div>
+<!-- /#main -->
 </div>
-<div class="panels-flexible-row panels-flexible-row-1-1 panels-flexible-row-last clearfix ">
-  <div class="inside panels-flexible-row-inside panels-flexible-row-1-1-inside panels-flexible-row-inside-last clearfix">
-<div class="panels-flexible-region panels-flexible-region-1-contacts_region panels-flexible-region-first panels-flexible-region-last contacts-region">
-  <div class="inside panels-flexible-region-inside panels-flexible-region-1-contacts_region-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
-<div class="panel-pane pane-contact">
-  
-        <h2 class="pane-title">Отправить сообщение</h2>
-    
-  
-  <div class="pane-content">
-    <form class="user-info-from-cookie contact-form" action="http://ed-link.ru/contacts.html" method="post" id="contact-site-form" accept-charset="WIN-1251"><div><div class="form-item form-type-textfield form-item-name">
-  <label for="edit-name">Ваше имя <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required"/>
-</div>
-<div class="form-item form-type-textfield form-item-mail">
-  <label for="edit-mail">Ваш e-mail адрес <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required"/>
-</div>
-<div class="form-item form-type-textfield form-item-subject">
-  <label for="edit-subject">Тема сообщения <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="255" class="form-text required"/>
-</div>
-<div class="form-item form-type-textarea form-item-message">
-  <label for="edit-message">Текст сообщения <span class="form-required" title="This field is required.">*</span></label>
- <div class="form-textarea-wrapper resizable"><textarea id="edit-message" name="message" cols="60" rows="5" class="form-textarea required"></textarea></div>
-</div>
-<br/>
-<a href="#" class="new_link">Отправить заявку</a>
-</div></form>  </div>
-
-  
-  </div>
-<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1 contact-information">
-  
-        <h2 class="pane-title">Контактная информация</h2>
-    
-  
-  <div class="pane-content">
-   <p>Общество с ограниченной ответственностью «Эдлинк».<br/>
-125364, г. Москва, ул. Свободы, д. 50, пом. 15,<br/>
-ИНН 7716683752 /КПП	773301001</p>
-<p>Телефон:+7 (495) 788-02-96 </p>
-E-mail: info@ed-link.ru
-  </div>
-
-  
-  </div>
-  </div>
-</div>
-  </div>
-</div>
-</div>
-</div>
-  </div><!-- /.content -->
-
-</div><!-- /.block -->  </div>
-        
-        </div><!-- /.section -->
-      </div><!-- /#content -->
-
-    </div><!-- /#main -->
-              </div><!-- /#main-wrapper -->
-  
-
-    <footer id="footer" role="contentinfo">
-        <div class="footer-wrapper clearfix">
-			  <div class="region region-footer">
-    <div id="block-block-9" class="block block-block block-odd">
-
-      
-  <div class="content">
-    ED-LINK  </div><!-- /.content -->
-
-</div><!-- /.block --><div id="block-block-5" class="block block-block block-even">
-
-      
-  <div class="content">
-    &copy; 2013 | <a href="index.html">ED-LINK</a>  </div><!-- /.content -->
-
-</div><!-- /.block --><div id="block-follow-site" class="block block-follow block-odd">
-
-      
-  <div class="content">
-    <div class="follow-links clearfix">Twitter
-Facebook
-Flickr
-<a href="_q=rss.xml" class="follow-link follow-link-this-site follow-link-site" title="Follow ED-LINK on This site (RSS)">This site (RSS)</a>
-Google Plus
-</div>  </div><!-- /.content -->
-
-</div><!-- /.block -->  </div>
-                    </div><!-- /#footer-wrapper -->
-    </footer><!-- /#footer -->
-
-  </div><!-- /#page -->
-</div><!-- /#page-wrapper -->
-
-
-
-
-</body>
-</html>
+<!-- /#main-wrapper -->
+<?php require( __DIR__ . "/includes/footer.php" ); ?>

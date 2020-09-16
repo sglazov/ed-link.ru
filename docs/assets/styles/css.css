@@ -1,5 +1,4 @@
 body#body {
-    background: url(../../../../../sites/all/themes/theme752/images/bg.gif) 0 0 repeat;
     color: #83868a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -30,7 +29,7 @@ a:hover {
 #page {}
 
 #header {
-    background: url(../../../../../sites/all/themes/theme752/images/header.gif) 0 0 repeat #005160;
+    background-color: #005160;
     position: relative;
 }
 
@@ -41,7 +40,6 @@ a:hover {
 
 #header .glow {
     padding-top: 69px;
-    background: url(../../../../../sites/all/themes/theme752/images/header-glow.jpg) center 0 no-repeat;
 }
 
 #header .glow:after {
@@ -66,7 +64,6 @@ a:hover {
 
 .section-1 .inner {
     padding-bottom: 21px;
-    background: url(../../../../../sites/all/themes/theme752/images/v-line.png) 0 bottom repeat-x;
 }
 
 .section-1 .inner:after {
@@ -119,7 +116,6 @@ a:hover {
 }
 
 #superfish-1>li {
-    background: url(../../../../../sites/all/themes/theme752/images/menu-divider.gif) right 5px no-repeat;
     border: 0;
     overflow: inherit;
     padding: 0 16px 0 0;
@@ -136,8 +132,8 @@ a:hover {
 #superfish-1>li>a {
     border: 0;
     color: #b1d9de;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     font-weight: normal;
     text-decoration: none;
@@ -150,17 +146,18 @@ a:hover {
     left: 50%;
     width: 5px;
     height: 3px;
-    background: url(../../../../../sites/all/themes/theme752/images/menu-marker.gif) 0 0 no-repeat;
 }
 
 #superfish-1>li>a:hover,
 #superfish-1>li>a.active,
 #superfish-1>li>a.sfHover {
     color: #52bed2;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #superfish-1 ul {
-    background: url(../../../../../sites/all/themes/theme752/images/submenu.gif) 0 0 repeat #10424e;
+    background: #10424e;
     border: 0px solid #1b1b1b;
     display: none;
     padding: 25px 0 15px;
@@ -232,7 +229,7 @@ a:hover {
 }
 
 #main-wrapper {
-    background: url(../../../../../sites/all/themes/theme752/images/main-bg.gif) 0 0 repeat #ebebeb;
+    background: #ebebeb;
 }
 
 #main-wrapper #main {
@@ -419,58 +416,6 @@ section#comments h2.title {
     width: 48%
 }
 
-#comments {
-    margin-top: 30px!important;
-}
-
-.comment-wrapper {
-    overflow: hidden;
-}
-
-article.comment .submitted {
-    margin: 2px 0 10px;
-}
-
-article.comment .submitted a.permalink {
-    display: none;
-}
-
-article.comment {
-    background: url(../../../../../sites/all/themes/theme752/images/comment.png) 0 0 repeat;
-    border: 1px solid #cbcbcb;
-    margin-bottom: 15px;
-    padding: 20px;
-}
-
-article.comment h2 {
-    color: #292a2b;
-    font-size: 18px;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-article.comment h3 {
-    line-height: normal;
-}
-
-article.comment h3 a {
-    color: #292a2b;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
-
-article.comment h3 a:hover {
-    color: #83868a;
-}
-
-.node article.comment footer {
-    overflow: hidden;
-    padding: 15px 0;
-}
-
 #edit-comment-body-und-0-format {
     background: #e5e5e5;
     border: none;
@@ -558,7 +503,7 @@ article.node {
 
 .view-node a {
     display: inline-block;
-    background: url(../../../../../sites/all/themes/theme752/images/link.gif) 0 0 repeat-x #252525;
+    background: #252525;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
