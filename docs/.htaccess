@@ -1,0 +1,21 @@
+DirectoryIndex index.php index.html
+Options -Indexes
+
+DefaultLanguage ru
+php_value default_charset "utf-8"
+
+ErrorDocument 404 /index.html
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/x-httpd-php .php .htm .html
+</IfModule>

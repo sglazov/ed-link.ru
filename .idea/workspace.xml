@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="931cc61f-cb4e-42d0-8eee-c91221e7ca8a" name="Default Changelist" comment="" />
+    <list default="true" id="931cc61f-cb4e-42d0-8eee-c91221e7ca8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/includes/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/includes/head/after.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/includes/head/before.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/includes/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/php/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rrrr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/services.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hVpXzg9y3wkWAtMq6RBXO6gGjr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -20,6 +35,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/php" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
     </key>
@@ -32,7 +50,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600106157831</updated>
-      <workItem from="1600106158963" duration="1791000" />
+      <workItem from="1600106158963" duration="1870000" />
+      <workItem from="1600260736969" duration="53000" />
+      <workItem from="1600260842959" duration="1204000" />
     </task>
     <servers />
   </component>
