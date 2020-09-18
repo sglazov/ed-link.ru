@@ -41,11 +41,11 @@ $meta = [
                                             <div class="inside panels-flexible-region-inside panels-flexible-region-1-contacts_region-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
                                                 <div class="panel-pane pane-contact">
                                                     <h2 class="pane-title">Отправить сообщение</h2>
+                                                    <p id="status-message"></p>
                                                     <div class="pane-content">
                                                         <form class="user-info-from-cookie contact-form"
-                                                              action="http://ed-link.ru/contacts.html"
-                                                              method="post" id="contact-site-form"
-                                                              accept-charset="WIN-1251">
+                                                              action="/php/contact.php"
+                                                              id="contact-site-form">
                                                             <div>
                                                                 <div class="form-item form-type-textfield form-item-name">
                                                                     <label for="edit-name">Ваше имя <span
@@ -54,7 +54,7 @@ $meta = [
                                                                     <input type="text" id="edit-name"
                                                                            name="name" value="" size="60"
                                                                            maxlength="255"
-                                                                           class="form-text required"/>
+                                                                           class="form-text form-input required"/>
                                                                 </div>
                                                                 <div class="form-item form-type-textfield form-item-mail">
                                                                     <label for="edit-mail">Ваш e-mail адрес
@@ -63,7 +63,7 @@ $meta = [
                                                                     <input type="text" id="edit-mail"
                                                                            name="mail" value="" size="60"
                                                                            maxlength="255"
-                                                                           class="form-text required"/>
+                                                                           class="form-text form-input required"/>
                                                                 </div>
                                                                 <div class="form-item form-type-textarea form-item-message">
                                                                     <label for="edit-message">Текст сообщения
@@ -73,7 +73,7 @@ $meta = [
                                                                         <textarea id="edit-message"
                                                                                   name="message" cols="60"
                                                                                   rows="5"
-                                                                                  class="form-textarea required"></textarea>
+                                                                                  class="form-textarea form-input required"></textarea>
                                                                     </div>
                                                                 </div>
                                                                 <button type="submit" class="form-submit">Отправить заявку</button>
@@ -90,8 +90,8 @@ $meta = [
                                                             125364, г. Москва, ул. Свободы, д. 50, пом. 15,<br/>
                                                             ИНН 7716683752 /КПП 773301001
                                                         </p>
-                                                        <p>Телефон:+7 (495) 788-02-96 </p>
-                                                        E-mail: info@ed-link.ru
+                                                        <p>Телефон: <a href="tel:+7 (495) 788-02-96">+7 (495) 788-02-96</a></p>
+                                                        E-mail: <a href="mailto:info@ed-link.ru">info@ed-link.ru</a>
                                                     </div>
                                                 </div>
                                             </div>

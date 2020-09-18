@@ -28,6 +28,9 @@
         <meta name="keywords"
               content="<?= $meta['keywords']; ?>"/>
     <?php endif; ?>
+
+    <script src="/assets/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/assets/scripts/contacts.js"></script>
 </head>
 <body id="body">
     <div id="page-wrapper">
