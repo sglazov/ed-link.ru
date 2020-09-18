@@ -9,7 +9,7 @@ $time  = date("H:i:s d M Y");
 $soft  = getenv(HTTP_USER_AGENT);
 $url_o = getenv(HTTP_REFERER);
 $sub   = "=?utf-8?b?".base64_encode("Письмо с Ed-Link.ru")."?=";
-$address = "yaglazov@gmail.com";
+$address = "dmitry@promopult.ru"; //
 $headers  = "From: " . strip_tags($mail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($mail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
@@ -28,7 +28,7 @@ mail ($address,$sub,$mes,$headers);
 
 // Записать данные из формы в файл
 
-$fo=fopen("/__orders/log_orders.txt", "a");
+$fo=fopen("log_orders.txt", "a");
 fwrite($fo, "
   <tr>
    <td>$time</td>
