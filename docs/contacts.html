@@ -24,8 +24,10 @@ $meta = [
                                                 <div class="inside panels-flexible-region-inside panels-flexible-region-1-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
                                                     <div class="panel-pane pane-node">
                                                         <h2 class="pane-title">Как нас найти:</h2>
-                                                        <script type="text/javascript" charset="utf-8"
-                                                                src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LL1LZfamxvw_2w_xgHnxrqnUXpgFg9Aw&amp;width=900&amp;height=450"></script>
+                                                        <div class="map-zone" style="width: 900px; height: 450px;">
+                                                            <script type="text/javascript" charset="utf-8"
+                                                                    src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LL1LZfamxvw_2w_xgHnxrqnUXpgFg9Aw&amp;width=900&amp;height=450"></script>
+                                                        </div>
                                                         </article><!-- /.node -->
                                                     </div>
                                                 </div>
@@ -63,15 +65,6 @@ $meta = [
                                                                            maxlength="255"
                                                                            class="form-text required"/>
                                                                 </div>
-                                                                <div class="form-item form-type-textfield form-item-subject">
-                                                                    <label for="edit-subject">Тема сообщения
-                                                                        <span class="form-required"
-                                                                              title="This field is required.">*</span></label>
-                                                                    <input type="text" id="edit-subject"
-                                                                           name="subject" value="" size="60"
-                                                                           maxlength="255"
-                                                                           class="form-text required"/>
-                                                                </div>
                                                                 <div class="form-item form-type-textarea form-item-message">
                                                                     <label for="edit-message">Текст сообщения
                                                                         <span class="form-required"
@@ -83,9 +76,7 @@ $meta = [
                                                                                   class="form-textarea required"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <br/>
-                                                                <a href="#" class="new_link">Отправить
-                                                                    заявку</a>
+                                                                <button type="submit" class="form-submit">Отправить заявку</button>
                                                             </div>
                                                         </form>
                                                     </div>

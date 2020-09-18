@@ -359,12 +359,6 @@ section#comments h2.title {
     color: #f00!important;
 }
 
-#comment-form .form-text,
-#user-login .form-text,
-#contact-site-form input.form-text,
-.search-form .form-text {
-    width: 220px;
-}
 
 #comment-form .form-textarea {
     height: 120px;
@@ -1098,7 +1092,6 @@ section.block .content li a:hover {
 
 #block-search-form .form-submit,
 #search-block-form .form-submit {
-    background: url(../../../../../sites/all/themes/theme752/images/search.png) no-repeat center center;
     border: 0;
     line-height: normal;
     width: 31px;
@@ -1110,18 +1103,16 @@ section.block .content li a:hover {
     text-indent: -9999px;
 }
 
-#search-block-form #edit-submit:hover,
-#search-block-form .form-submit:hover {}
-
 .form-submit {
     display: inline-block;
-    background: url(../../../../../sites/all/themes/theme752/images/link.gif) 0 0 repeat-x #252525;
-    font-size: 12px;
-    text-transform: uppercase;
+    background: #252525;
+    font-size: 15px;
+    /*text-transform: uppercase;*/
     text-decoration: none;
     color: #fff;
-    padding: 10px 15px 9px;
+    padding: 15px 20px 15px;
     border: none;
+    cursor: pointer;
 }
 
 .form-submit:hover {
@@ -1129,7 +1120,6 @@ section.block .content li a:hover {
 }
 
 #footer {
-    background: url(../../../../../sites/all/themes/theme752/images/dashed-line.png) 0 0 repeat-x;
     clear: both;
     padding: 62px 0;
     position: relative;
@@ -1191,7 +1181,6 @@ section.block .content li a:hover {
     width: 60px;
     height: 40px;
     padding-top: 20px;
-    background: url(../../../../../sites/all/themes/theme752/images/to-top.png) 0 0 no-repeat;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
@@ -2051,4 +2040,47 @@ li.sfHover>a>.sf-sub-indicator {
 .sf-vertical.rtl li:hover>a>.sf-sub-indicator,
 .sf-vertical.rtl li.sfHover>a>.sf-sub-indicator {
     background-position: -10px 0;
+}
+
+.flexslider ul {
+    list-style-type: none;
+}
+
+.form-item {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 15px;
+    max-width: 387px;
+}
+
+.form-item:last-child {
+    margin-bottom: 0;
+}
+
+.form-item input {
+    width: 100%;
+}
+
+.form-item label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.map-zone {
+    border: 1px solid #005160;
+    border-radius: 4px;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #3b8391;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #005160;
 }
