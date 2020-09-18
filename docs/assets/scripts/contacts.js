@@ -19,8 +19,6 @@ if ($) $(function () {
 
     if ( formInput.val().length > 0 ) {
 
-      formInput.closest('.form-group').removeClass('is-invalid ui-shake');
-
       $.ajax({
         type: "POST",
         url: "/php/contact.php",
@@ -49,15 +47,7 @@ if ($) $(function () {
       });
 
     } else {
-
-      formInput.closest('.form-group').addClass('is-error ui-shake');
-      setTimeout(
-        function() {
-          formInput.closest('.form-group').removeClass('is-invalid');
-          formInput.closest('.form-group').removeClass('ui-shake');
-        }, 1200
-      )
-
+      $('#status-message').text('Не все поля заполнены!');
     }
 
     return false;
